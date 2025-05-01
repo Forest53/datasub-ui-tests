@@ -5,14 +5,12 @@ export default defineConfig({
     use: {
         baseURL: 'https://qatest.datasub.com',
         headless: true,
-        browserName: 'chromium', // <- здесь можно указать конкретный браузер
+        browserName: 'chromium',
     },
     projects: [
         {
             name: 'Chromium',
             use: { ...devices['Desktop Chrome'] },
         },
-        // Если хочешь только один браузер, остальные можешь удалить
     ],
 });
-
